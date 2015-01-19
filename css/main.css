@@ -302,3 +302,8 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.container-fluid {
+  background-image: url("img\background.png");
+  background: red;
+}
