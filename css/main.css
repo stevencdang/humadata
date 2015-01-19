@@ -304,6 +304,17 @@ textarea {
 }
 
 .container-fluid {
-  background-image: url("img\background.png");
-  background: red;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+#title-text {
+  position: absolute;
+  top: 18%;
 }
