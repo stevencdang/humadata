@@ -15,6 +15,10 @@ h2 {
   margin: 20px 10px;
 }
 
+.title {
+  font-style: italic;
+}
+
 .header {
   /* position: absolute; */
   /* top: 20%; */
@@ -95,20 +99,49 @@ h2 {
   background-color: #666666;
 }
 
-.navbar li a {
+.navbar-nav .active {
   color: #fff;
+  /* line-height: 20px; */
+  /* padding: 20px 30px; */
+}
+.navbar-nav .active li a{
+  padding: 20px 30px;
 }
 
-.navbar.active li a {
-  color: #666
+/* .navbar-nav.active li a { */
+  /* color: #000; */
+  /* line-height: 20px; */
+  /* padding: 20px 30px; */
+/* } */
+
+.navbar-nav .current {
+  color: #FFF;
+}
+
+.navbar .nav-logo li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.navbar .nav-humadata {
+  padding: 5px 30px;
 }
 
 .navbar-nav .logo{
   width: 150px;
   padding-left: 15px;
   padding-right: 15px;
-
+  max-width: 150px;
 }
+.navbar-nav .humadata{
+  max-width: 200px;
+  height: 50px;
+}
+
+.navbar {
+  height: 60px;
+}
+
 #landing-view {
   background-color: #ffe;
   background: url("../img/classroom2.jpg") 50% 0 repeat fixed;
@@ -135,18 +168,24 @@ h2 {
 
 #logo {
   display: inline-block;
+  color: #FFF;
+  z-index: 100;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#nav-logo {
   height: 80px;
   width: 160px;
   border: 5px solid #666666;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
   background: #666666;
-  color: #FFF;
   position: absolute;
   top: 100%;
   left: 50%;
   margin-left: -80px;
-  z-index: 100;
+  text-align: center;
 }
 
 #logo.affix {

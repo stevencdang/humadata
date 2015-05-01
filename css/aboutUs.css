@@ -4,6 +4,10 @@ section {
   margin-bottom: 2%;
 }
 
+#footer {
+  margin-bottom: 0;
+}
+
 /* .header { */
   /* /* position: absolute; */ */
   /* /* top: 20%; */ */
@@ -41,12 +45,31 @@ section {
   /* top: 0; */
   /* left: 0; */
   overflow: hidden;
-  color: #fff;
+  color: #FFF;
   background-image: url("../img/hexagon-vert.png");
   background-size: 100%;
 }
 
-.hex-section a{
+.headshot{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#each-team {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#each-team a {
   color: #000;
 }
+
+/* .nav-logo { */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 50%; */
+  /* max-width: 200px; */
+  /* max-height: 200px; */
+/* } */
+
 

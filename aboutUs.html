@@ -18,14 +18,13 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/aboutUs.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container-fluid">
-          <nav id="main-navigation" class="navbar navbar-default row">
+          <nav id="main-navigation" class="navbar navbar-default navbar-fixed-top row">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,19 +43,52 @@
                     Our Work 
                   </a>
                 </li>
-                <li>
-                  <a class="hidden-xs logo" href="#">
-                    <img alt="HUMAData" src="...">
+                <li class="nav-logo">
+                  <a class="nav-humadata hidden-xs" href="#">
+                    <img class="humadata" alt="HUMAData" src="../img/humadata.png">
                   </a>
                 </li>
                 <li class="active">
-                  <a href="aboutUs.html">
-                    About Us <span class="sr-only">(current)</span>
-                  </a>
+                  <a href="aboutUs.html">About Us</a>
                 </li>
               </ul>
             </div>
           </nav>
+          <!-- <nav id="main-navigation" class="navbar navbar-default row"> -->
+            <!-- <div class="navbar-header"> -->
+              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav"> -->
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <!-- <span class="icon-bar"></span> -->
+                <!-- <span class="icon-bar"></span> -->
+                <!-- <span class="icon-bar"></span> -->
+              <!-- </button> -->
+              <!-- <a class="navbar-brand visible-xs " href="#"> -->
+                <!-- <img alt="HUMAData" src="..."> -->
+              <!-- </a> -->
+            <!-- </div> -->
+            <!-- <div class="collapse navbar-collapse" id="top-nav"> -->
+              <!-- <ul class="nav navbar-nav"> -->
+                <!-- <li> -->
+                  <!-- <a href="index.html"> -->
+                    <!-- Our Work  -->
+                  <!-- </a> -->
+                <!-- </li> -->
+                <!-- <li class="nav-logo"> -->
+                  <!-- <a class="nav-humadata hidden-xs" href="#"> -->
+                    <!-- <img class="humadata" alt="HUMAData" src="../img/humadata.png"> -->
+                  <!-- </a> -->
+                <!-- </li> -->
+                <!-- <li class="active"> -->
+                  <!-- <a href="aboutUs.html"> -->
+                    <!-- About Us <span class="sr-only">(current)</span> -->
+                  <!-- </a> -->
+                <!-- </li> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+            <!-- <div class="nav-logo"> -->
+              <!-- <img id="logo" alt="HUMAData" src="../img/logo.png"> -->
+            <!-- </div> -->
+          <!-- </nav> -->
 
         <!-- Add your site or application content here -->
           <section id="meet-team" class="row">
@@ -89,23 +121,25 @@
 
           <section id="each-team" class="row">
             <div class="col-md-3 col-sm-6, col-xs-12">
-              <article class="hex-section">
-                <h2 class="hex-heading">
+              <article>
+                <img class="headshot" src="../img/cassie-hex.png">
+                <h2>
                   Cassandra Taylor
                 </h2>
                 <h3 class="title">
                   Project Manager
                 </h3>
                 <a href-"mailto:cassandra@cmu.edu">
-                  <h3 class="title">
+                  <h3>
                     cassandra [at] cmu [dot] edu 
                   </h3>
                 </a>
               </article>
             </div>
             <div class="col-md-3 col-sm-6, col-xs-12">
-              <article class="hex-section">
-                <h2 class="hex-heading">
+              <article>
+                <img class="headshot" src="../img/qian-hex.png">
+                <h2>
                   Qian Hu
                 </h2>
                 <h3 class="title">
@@ -119,30 +153,32 @@
               </article>
             </div>
             <div class="col-md-3 col-sm-6, col-xs-12">
-              <article class="hex-section">
-                <h2 class="hex-heading">
+              <article class="section">
+                <img class="headshot" src="../img/arka-hex.png">
+                <h2>
                   Arka Bani
                 </h2>
                 <h3 class="title">
                   User Researcher
                 </h3>
                 <a href-"mailto:abmzone@gmail.com">
-                  <h3 class="title">
+                  <h3>
                     abmzone [at] gmail [dot] com
                   </h3>
                 </a>
               </article>
             </div>
             <div class="col-md-3 col-sm-6, col-xs-12">
-              <article class="hex-section">
-                <h2 class="hex-heading">
+              <article>
+                <img class="headshot" src="../img/steven-hex.png">
+                <h2>
                   Steven Dang
                 </h2>
                 <h3 class="title">
                   Developer
                 </h3>
                 <a href-"mailto:stevencdang@cmu.edu">
-                  <h3 class="title">
+                  <h3>
                     stevencdang [at] cmu [dot] edu
                   </h3>
                 </a>
@@ -206,6 +242,7 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

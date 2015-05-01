@@ -10,5 +10,9 @@ $(document).ready(function() {
   $(".carousel").carousel({interval: false});
 
   $(".navbar li a").css("color", "#fff");
-  $(".navbar.active li a").css("color", "#ccc");
+  $(".navbar li a").css("padding", "20px 30px");
+  $(".navbar .active a").css("color", "#000");
+  $(".nav-humadata").css("padding", "5px 30px");
+  var width = $(".nav-logo").width()
+  //$(".nav-logo").css("margin-left", "-" + width/2 + "px")
 });
