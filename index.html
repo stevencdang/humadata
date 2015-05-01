@@ -13,10 +13,10 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,20 +25,384 @@
 
         <!-- Add your site or application content here -->
         <div class="container-fluid">
-          <div class="row">
-            <img class="background" src="img/Websitev2.png">
-            <!--
-            <h1 id="title-text" class="text-center">
-              Hi! We are humaDATA
+          <nav id="main-navigation" class="navbar navbar-default navbar-fixed-top row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs " href="#">
+                <img alt="HUMAData" src="...">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="top-nav">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#">
+                    Our Work <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="hidden-xs logo" href="#">
+                    <img alt="HUMAData" src="...">
+                  </a>
+                </li>
+                <li>
+                  <a href="aboutUs.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section id="landing-view" class="row" 
+              data-type="background" data-speed="10">
+            <h1 class="img-caption">
+              "Learning results from what the student does and thinks and only from what the student does and thinks. The teacher can advance learning only by influencing what the student does to learn" ~Herb Simon
             </h1>
-            -->
-          </div>
-        </div>
+            <div class="logo" id="logo" data-spy="affix" data-offset-top="900">Logo</div>
+          </section>
+          <section id="proj-overview" class="row">
+            <div class="col-sm-2"></div>
+            <article class="col-sm-8">
+              <h1 class="header">Project Overview</h1>
+              <p class="content">
+                In January, 2015, DDI approached METALS with the need to create a novel, engaging learning activity to update their product suite and meet their clients' evolving needs. With a data-driven perspective and learner-centered approach to research, the HUMAData team set out to design an educational experience that directly addresses the learners' needs and most effectively facilitated their learning process
+              </p>
+              <p class="content">
+                Investigate the needs of front-line leaders as they acquire and hone interaction skills and create and engaging, purposeful learning experience that facilitates a data-driven product development strategy
+              </p>
+            </article>
+            <div class="col-sm-2"></div>
+          </section>
+          <section id="proj-diagram" class="row" 
+              data-type="background" data-speed="10">
+              <!-- <img class="blur" src="img/classroom2.jpg"> -->
+              <div class="blur">&nbsp </div>
+              <div id="diagram-top"></div>
+              <div id="diagram-left"></div>
+              <div id="diagram-right"></div>
+              <div id="diagram"></div>
+          </section>
+          <section id="research-overview" class="row">
+            <h1 class="header">Our Research Process</h1>
+            <div class="col-sm-3 col-xs-12">
+              <article class="hex-section">
+                <h2 class="header hex-header">
+                  Understand the Domain
+                </h2>
+                <p class="content hex-body">
+                  We start our research by understanding the space we
+                  are working in. We use various methods to undestand
+                  challenges in both the knowledge domain as well as
+                  the solution space 
+                </p>
+              </article>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <article class="hex-section">
+                <h2 class="header hex-header">
+                  Characterize the Context
+                </h2>
+                <p class="content hex-body">
+                  After our initial research phase, we enter an
+                  extensive user research phase that looks to better
+                  model the target learners, their environments, and
+                  their social context with the goal of uncovering
+                </p>
+              </article>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <article class="hex-section">
+                <h2 class="header hex-header">
+                  Identify Learning Goals
+                </h2>
+                <p class="content hex-body">
+                  Our next step from the our user research is to 
+                  synthesize our data in order to look past
+                  superficial features of the problem
+                  
+                </p>
+              </article>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <article class="hex-section">
+                <h2 class="header hex-header">
+                  Design the Instruction
+                </h2>
+                <p class="content hex-body">
+                  We take our findings from our analysis
+                </p>
+              </article>
+            </div>
+            <div id="process-diagram">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="col-sm-8">
+              <div class="process-img">
+                Understand -> Characterize -> Needfinding -> Design
+              </div>
+            </div>
+            <div class="col-sm-2">&nbsp;</div>
+            </div>
+          </section>
+          <section id="domain" class="row">
+            <div id="domain-carousel" class="carousel slide" data-ride="carousel">
+              <!-- Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <li data=target="r-overview-carousel" data-slide-to"0" 
+                    class="active">
+                </li>
+                <li data=target="r-overview-carousel" data-slide-to"1">
+                </li>
+                <li data=target="r-overview-carousel" data-slide-to"2">
+                </li>
+              </ol>
 
+              <div class="carousel-inner" role="listbox">
+                <article class="side-hex item active">
+                  <img class="side-hex-bkgrnd" src="img/side-hex-carousel1.jpg">
+                  <div class="side-hex-container">
+                    <h1 class="side-hex-header header">
+                      Understand the Domain
+                    </h1>
+                    <p class="side-hex-body content">
+                      The goal of our first research cycle was to inform 
+                      the direction of future design work. While early 
+                      meetings with the client scoped out the general 
+                      nature of the problem, we needed to gain deeper 
+                      insight into the problem space. Our process of 
+                      exploratory research began with orienting ourselves 
+                      to the space through literature review, competitive 
+                      analysis, and initial brainstorming of design solutions. 
+                    </p>
+                  </div>
+                  <div class="col-sm-3">&nbsp;</div>
+                </article>
+                <article class="side-hex item">
+                  <img src="img/side-hex-carousel2.jpg">
+                  <div class="carousel-caption col-sm-9">
+                    <h1 class="side-hex-header header">
+                      Literature Review
+                    </h1>
+                    <p class="side-hex-body content">
+                      In order to create an effective learning experience, 
+                      the designer needs to be familiar with both 
+                      domain-specific content and relevant instructional 
+                      techniques. For this project, the relevant content 
+                      was leadership skills. Our review of the literature, 
+                      looking at over 80 sources spanning management science,
+                      leadership training, and learning science literatures,
+                      revealed a focus on the factors affecting transfer, 
+                      or learners' ability to translate instruction to 
+                      application. Moving forward, this literature served 
+                      as a reference in our attempts to identify the 
+                      features of instruction which best facilitate transfer.
+                    </p>
+                  </div>
+                </article>
+                <article class="side-hex item">
+                  <img src="img/side-hex-carousel2.jpg">
+                  <div class="carousel-caption col-sm-9">
+                    <h1 class="side-hex-header header">
+                      Competitive Analysis
+                    </h1>
+                    <p class="side-hex-body content">
+                    We conducted an extensive competitive analysis to better 
+                    grasp the features of the existing solution space and to 
+                    understand the competitive landscape of our target 
+                    produce. We utilized a comparative feature analysis to 
+                    enumerate the solutions of over 50 competitors in the 
+                    industry and synthesized the data into a broad 
+                    categorical framework that supports rapid qualitative 
+                    comparison and future decision-making. 
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <!-- Carousel Controls -->
+              <a class="left carousel-control" href="#domain-carousel"
+                  role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#domain-carousel"
+                  role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </section>
+          <section id="characterize" class="row"
+              data-type="background" data-speed="10">
+            <h1 class="header col-xs-12">
+              Characterize the Context
+            </h1>
+            <div class="row">
+              <div class="col-sm-2 hidden-xs"></div>
+              <p class="content col-sm-8 col-xs-12">
+                Our first research phase yielded a map of the space and allowed us to generate a wide range of research questions to investigate. We considered the questions we wanted to pursue and identified a set of appropriate research methods to collect qualitative and quantitative data that can inform our design of solutions that could meet the needs of our target learners.
+              </p>
+              <div class="col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row hex-row">
+              <article class="col-sm-4 col-xs-12">
+                <div class="hex-section">
+                  <h2 class="header hex-header">
+                    Contextual Inquiry
+                  </h2>
+                  <p class="content hex-body">
+                    Contextual inquiry is an immersive, apprentice-like observation method that attempts to understand the deeper needs of the participants through capturing everyday actions, the research may notice behavior that the participants would not have been sufficiently conscious of to have reported.
+                  </p>
+                </div>
+              </article>
+              <article class="col-sm-4 col-xs-12">
+                <div class="hex-section">
+                  <h2 class="header hex-header">
+                    Cognitive Task Analysis
+                  </h2>
+                  <p class="content hex-body">
+                    Cognitive Task Analysis (CTA) is aimed at understanding processes that require extensive cognitive activity from the user, such as decision-making, problem-solving, memory, attention, and judgement. It systematically defines the subcomponents required to execute the task, identifying decision points and relevant cognitive processes.
+                  </p>
+                </div>
+              </article>
+              <article class="col-sm-4 col-xs-12">
+                <div class="hex-section">
+                  <h2 class="header hex-header">
+                    Ethnographic Research
+                  </h2>
+                  <p class="content hex-body">
+                    Ethnographic Research uses large scale cross-sectional surveys to uncover demographic factors. We conducted a review of existing ethnographic research, focusing on dispositions relating to leadership and technology.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="row hex-row">
+              <article class="col-sm-4 col-xs-12">
+                <div class="hex-section">
+                  <h2 class="header hex-header">
+                    Interview
+                  </h2>
+                  <p class="content hex-body">
+                    Interview uses a semi-structured question-answer process to systematically probe into the qualitative experiences and perspectives of a participant. Through interview data we can gain deeper insights into the physical, cognitive, affective, and social processes that a participant experiences.
+                  </p>
+                </div>
+              </article>
+              <article class="col-sm-4 col-xs-12">
+                <div class="hex-section">
+                  <h2 class="header hex-header">
+                    Social Media Research
+                  </h2>
+                  <p class="content hex-body">
+                    Social Media Research aims to understand users through public social media resources, such as online forums, social networking sites, and product reviews. It is a process of observing existing statements and interactions.
+                  </p>
+                </div>
+              </article>
+              <article class="col-sm-4 col-xs-12">
+                <div class="hex-section">
+                  <h2 class="header hex-header">
+                    Survey
+                  </h2>
+                  <p class="content hex-body">
+                    Surveys are a method of collecting quantitative and qualitative data from a population in such that one obtains valid insights into the respondants without being overly transparent about the goals of the study.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section id="need-finding" class="row">
+            <h1 class="header">
+              Identifing the Learning Goal
+            </h1>
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-4">
+                <p class="content">
+                  Our data collection process left us with tens of hours of raw video and audio recordings on top of pages of notes and spreadsheets. As part of the journey from raw data to synthesized findings, which would ultimately inform our design ideas, we used a 4-step process of analysis:
+                </p>
+                <ol>
+                  <li>Aggregate and compile raw data</li>
+                  <li>Review and Interpret data</li>
+                  <li>Sensemaking and model-building</li>
+                  <li>Data Synthesis and Needs Identification</li>
+                </ol>
+              </div>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-4">
+                <div id="nf-carousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#nf-carousel" data-slide-to="0" 
+                        class="active"></li>
+                    <li data-target="#nf-carousel" data-slide-to="1"></li>
+                    <li data-target="#nf-carousel" data-slide-to="2"></li>
+                    <li data-target="#nf-carousel" data-slide-to="3"></li>
+                  </ol
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="img/compiled_data.png" alt="Aggregate and compile">
+                      <div class="carousel-caption caption-under">
+                        Compile quotes and observations from audio recordings and interview notes in a spreadsheet. This technique facilitates synthesis of the data, since the reader can look across one row and see the full set of answers across interviews to one question.
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="img/interpretation.jpg" alt="Review and Interpret Data">
+                      <div class="carousel-caption caption-under">
+                        Review and interpret the raw data as a group. While the spreadsheet helped us organize a vast set of data, this process helped us begin to identify the more relevant points from each data source.
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="img/model-building1.jpg" alt="Model-building">
+                      <div class="carousel-caption caption-under">
+                        Model individual data sources. For a selectzion of data sources, we used contextual inquiry modelling techniques to identify proccesses and patterns of interaction. This allowed us to identify trends across individuals as well as draw insights regarding key areas of opportunity or breakdown.
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="img/affinity.JPG" alt="Sense-making and Synthesis">
+                      <div class="carousel-caption caption-under">
+                         In order to synthesize across our various data sources and models, we iteratively clustered and categorized our data points using an affinity diagramming process. This allowed us to extract high value abstractions and trends.
+                      </div>
+                    </div>
+                  </div
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#nf-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#nf-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+          </section>
+          <section id="design" class="row"
+              data-type="background" data-speed="10">
+            <h1 class="header">Designing the Learning Experience</h1>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+            <p class="content">
+              Using our research findings as our primary guidelines, we followed an iterative ideation process to lead towards a small set of product recommendations. We began by identifying a product feature space that satisfies the core needs of the learner. We analyzed the theory and common practice around each of these potential features to support our initial valuation of each idea. This supported our subsequent ideation which led to a set of initial product concepts which are currently being developed and validated.
+            </p>
+            </div>
+            <div class="col-sm-2"></div>
+          </section>
+          <section id="footer" class="row">
+              <span class="glyphicon glyphicon-copyright-mark" 
+                  aria-hidden="true"></span>
+              2015 HUMAData
+          </section>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/init.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -47,7 +411,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-23639206-2');ga('send','pageview');
         </script>
     </body>
 </html>
