@@ -70,7 +70,7 @@ h2 {
   /* padding: 45px 10px; */
   background-image: url("../img/hexagon-orange.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
@@ -158,8 +158,10 @@ h2 {
 
 #landing-view {
   background-color: #ffe;
-  background: url("../img/classroom2.jpg") 50% 0 repeat fixed;
-  background-size: 100%;
+  background: url("../img/classroom2.jpg");
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-size: cover;
   text-align: center;
   position: relative;
   border-bottom: 5px solid #666666;
@@ -240,7 +242,7 @@ h2 {
   background: url("../img/research-blur.jpg") 50% 0 repeat fixed;
   min-height: 250px;
   position: relative;
-  background-size: 100%;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
@@ -277,7 +279,7 @@ h2 {
   min-height: 700px;
   background-color: #ffe;
   background: url("../img/cta.JPG") 50% 0 repeat fixed;
-  background-size: 100%;
+  background-size: cover;
   padding-bottom: 100px;
 }
 
@@ -330,7 +332,7 @@ h2 {
   padding-bottom: 5%;
   background-color: #ffe;
   background: url("../img/evaluation.jpg") 50% 0 repeat fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #design .section {
