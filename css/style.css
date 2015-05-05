@@ -128,6 +128,23 @@ h2 {
   /* padding: 20px 30px; */
 /* } */
 
+#mobile-logo {
+ margin: 8px 0px 8px 30px;
+ height: 40px;
+ display: inline-block;
+}
+
+.mobile-brand {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+#mobile-humadata {
+  width: 150px;
+  max-height: 50px;
+
+}
+
 .navbar-nav .current {
   color: #FFF;
 }
@@ -147,6 +164,7 @@ h2 {
   padding-right: 15px;
   max-width: 150px;
 }
+
 .navbar-nav .humadata{
   max-width: 200px;
   height: 50px;
@@ -183,6 +201,7 @@ h2 {
   background: #f5f5f5;
   opacity: 0.8;
   padding: 15px;
+  border-radius: 15px;
 }
 
 #logo {

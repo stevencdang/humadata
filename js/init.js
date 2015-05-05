@@ -33,8 +33,20 @@ function resize_landing() {
 
 };
 
+function style_nav() {
+  $(".navbar li a").css("color", "#fff");
+  $(".navbar li a").css("padding", "20px 30px");
+  $(".navbar li a").css("background", "#666666");
+  $(".navbar .active a").css("color", "#000");
+  $(".navbar .active a").css("background", "#e7e7e7");
+  $(".nav-humadata").css("padding", "5px 30px");
+  var width = $(".nav-logo").width()
+
+}
+
 function resize() {
   console.log("Resizing window elements");
+  style_nav();
   resize_landing();
 
   $("#proj-diagram.blur").height(
@@ -42,11 +54,6 @@ function resize() {
 
   $(".carousel").carousel({interval: false});
 
-  $(".navbar li a").css("color", "#fff");
-  $(".navbar li a").css("padding", "20px 30px");
-  $(".navbar .active a").css("color", "#000");
-  $(".nav-humadata").css("padding", "5px 30px");
-  var width = $(".nav-logo").width()
   var width = $("#diagram").width();
   var h = $("#diagram").height();
   console.log(width);
