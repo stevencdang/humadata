@@ -4,6 +4,14 @@ section {
   margin-bottom: 2%;
 }
 
+#meet-team {
+  margin-top: 60px;
+}
+
+.profile {
+  padding: 15px;
+}
+
 #footer {
   margin-bottom: 0;
 }
@@ -62,8 +70,12 @@ section {
 
 #each-team a {
   color: #000;
+  text-decoration: underline;
 }
 
+/* #each-team a h4{ */
+  /* font-style: underline; */
+/* } */
 /* .nav-logo { */
   /* position: absolute; */
   /* top: 0; */

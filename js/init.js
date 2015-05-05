@@ -41,7 +41,6 @@ function style_nav() {
   $(".navbar .active a").css("background", "#e7e7e7");
   $(".nav-humadata").css("padding", "5px 30px");
   var width = $(".nav-logo").width()
-
 }
 
 function resize() {
