@@ -4,8 +4,14 @@
 h2 {
   1.1em
 }
+
 p{ 
 font-family: 'Droid Sans', sans-serif;
+}
+
+li {
+  font-size: 1.2em;
+  margin-left: 15px;
 }
 
 .mobile-header {
@@ -135,8 +141,12 @@ font-family: 'Droid Sans', sans-serif;
   font-size: 1.2em;
 }
 
+.side-hex-container {
+  width: 60%;
+  margin: 0 20%;
+}
+
 .side-hex {
-  min-height: 500px;
   position: absolute;
   top: 0;
   left: 20%;
@@ -325,7 +335,8 @@ font-family: 'Droid Sans', sans-serif;
 }
 
 #domain {
-  min-height: 500px;
+  padding: 0;
+  background: #e5e5e5;
 }
 
 #domain .carousel-control {
