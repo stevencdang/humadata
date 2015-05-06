@@ -55,6 +55,28 @@ function resize_research_hex() {
   });
 };
 
+function resize_characterize() {
+  //Get max height
+  var height = 0;
+  var w = $(".hex-section").width();
+  $("#characterize .hex-cap").each(function() {
+    $(this).height(0.2*w);
+  });
+  $("#characterize .hex-square").each(function() {
+    var h = 0;
+    $(this).children().each(function() {
+      h += $(this).height();
+    });
+    var w = $(this).width();
+    if (h > height) {
+      height = h;
+    }
+  });
+  $("#characterize .hex-square").each(function() {
+    $(this).height(height);
+  });
+};
+
 function style_nav() {
   $(".navbar li a").css("color", "#fff");
   $(".navbar li a").css("padding", "20px 30px");
@@ -70,6 +92,7 @@ function resize() {
   style_nav();
   resize_landing();
   resize_research_hex();
+  resize_characterize();
 
   $("#proj-diagram.blur").height(
       $("#proj-diagram.blur").parent().height())
@@ -84,18 +107,6 @@ function resize() {
   //$(".nav-logo").css("margin-left", "-" + width/2 + "px")
   //
   
-  height = 0;
-  var w = $(".hex-section").width();
-  $("#characterize .hex-section").each(function() {
-    var h = $(this).height();
-    var w = $(this).width();
-    if (h > height) {
-      height = h;
-    }
-  });
-  $("#characterize .hex-section").each(function() {
-    $(this).height(1.5*height);
-  });
 
 };
 
